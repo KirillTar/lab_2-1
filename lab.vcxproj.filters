@@ -18,9 +18,6 @@
     <ClInclude Include="Keeper.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="utils.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="Price.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>

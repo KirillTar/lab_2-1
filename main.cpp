@@ -3,7 +3,6 @@
 #include <conio.h>
 #include <windows.h>
 
-#include "utils.cpp"
 #include "Keeper.h"
 #include "Price.h"
 
