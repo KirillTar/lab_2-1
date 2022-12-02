@@ -14,6 +14,13 @@ setStore();
 setPrice();
 }
 
+Price::Price(string* lines) {
+	name = lines[0];
+	store = lines[1];
+	price = stoi(lines[2]);
+}
+
+
 void Price::setName() {
 	cout << "Наименование: ";
 	getline(cin, name);
@@ -73,15 +80,15 @@ void Price::edit() {
 }
 
 void Price::print() {
-	/*cout << "//////////////////////////////" << endl;
-	cout.width(50);
-	cout.width(50);
-	cout.width(50);
-	cout.width(50);
-	cout << "//////////////////////////////" << endl;*/
-	cout << "//1.Наименование: " << name << "//" << endl;
-	cout << "//2.Продавец: " << store << "//" << endl;
-	cout << "//3.Цена: " << price << "//" << endl;
+	cout.width(25); cout << left << "//1.Наименование: ";
+	cout.width(15); cout << right << name;
+	cout << "//" << endl;
+	cout.width(25); cout << left << "//2.Продавец: ";
+	cout.width(15); cout << right << store;
+	cout << "//" << endl; 
+	cout.width(25); cout << left << "//3.Цена: ";
+	cout.width(15); cout << right << price;
+	cout << "//" << endl;
 }
 
 void Price::sale(int num) {

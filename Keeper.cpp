@@ -120,8 +120,9 @@ void Keeper::load() {
 			fin.getline(s, '\n');
 			linesCounter++;
 		}
+		linesCounter--;
 
-		//int numberOfLines = count(std::istreambuf_iterator<char>(fin), std::istreambuf_iterator<char>(), '\n');
+		/*int linesCounter = count(std::istreambuf_iterator<char>(fin), std::istreambuf_iterator<char>(), '\n');*/
 		if (linesCounter <= 0 || linesCounter % linesAmount != 0)
 		{
 			cout << linesCounter << endl;
@@ -133,7 +134,7 @@ void Keeper::load() {
 
 		int lineNum = 0;
 		Price** newCatalog = new Price * [(int)linesCounter / linesAmount];
-		string lines[linesAmount];
+		string lines[linesAmount ];
 
 		while (getline(fin, line))
 		{

@@ -11,11 +11,7 @@ class Price
 public: 
 	Price();
 
-	Price(string *lines) {
-		name = lines[0];
-		store = lines[1];
-		price = stoi(lines[2]);
-	}
+	Price(string* lines);
 
 	void setName();
 	void setStore();
@@ -31,7 +27,7 @@ public:
 	friend ofstream& operator<< (ofstream& file, const Price& price){
 		file << price.name << endl;
 		file << price.store << endl;
-		file << price.price << endl;
+		file << price.price << endl << endl;
 		return file;
 	}
 

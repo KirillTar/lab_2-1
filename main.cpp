@@ -11,7 +11,7 @@ using namespace std;
 Keeper keeper;
 
 bool Empty() {
-	if (!keeper) return false; // используем перегрузку оператора !
+	if (!keeper) return false;
 
 	cout << "Список товаров пуст" << endl;
 	cout << endl << "Нажмите любую клавишу чтобы вернутся в меню" << endl;
